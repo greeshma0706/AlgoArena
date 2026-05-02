@@ -1,0 +1,23 @@
+{
+  "name": "algoarena",
+  "version": "1.0.0",
+  "description": "AlgoArena — 1v1 Real-Time Algorithm Battle Arena",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"node server/index.js\" \"cd client && npm run dev\"",
+    "install:all": "npm install && cd client && npm install",
+    "server": "node server/index.js",
+    "client": "cd client && npm run dev"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  },
+  "keywords": ["algoarena", "competitive-coding", "multiplayer", "algorithm-battle"],
+  "license": "MIT"
+}
